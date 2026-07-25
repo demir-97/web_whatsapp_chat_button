@@ -26,6 +26,7 @@ message. Save.
   visitors, nothing is loaded unless the button is enabled.
 """,
     'depends': ['website'],
+    'images': ['static/description/banner.png'],
     'data': [
         'views/res_config_settings_views.xml',
         'views/website_templates.xml',
