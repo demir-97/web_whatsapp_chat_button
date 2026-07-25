@@ -1,0 +1,34 @@
+.o_wa_button {
+    position: fixed;
+    bottom: 20px;
+    z-index: 1030;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: #25D366;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .35);
+    transition: transform .15s ease, background-color .15s ease;
+    text-decoration: none;
+
+    &:hover {
+        transform: scale(1.08);
+        background-color: #20bd5a;
+    }
+}
+
+.o_wa_button_right {
+    right: 20px;
+}
+
+.o_wa_button_left {
+    left: 20px;
+}
+
+@media print {
+    .o_wa_button {
+        display: none;
+    }
+}
