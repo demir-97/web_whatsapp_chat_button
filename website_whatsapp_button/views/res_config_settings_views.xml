@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record id="res_config_settings_view_form_inherit_wa_button" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.wa.button</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="website.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//block[@id='website_info_settings']" position="inside">
+                <setting id="wa_button_setting" string="WhatsApp Button"
+                         help="Floating chat button that opens WhatsApp, on every page of this website">
+                    <field name="wa_button_enabled"/>
+                    <div class="content-group" invisible="not wa_button_enabled">
+                        <div class="row mt8">
+                            <label class="col-lg-3" string="Number" for="wa_button_number"/>
+                            <field name="wa_button_number" placeholder="+1 555 123 4567" required="wa_button_enabled"/>
+                        </div>
+                        <div class="row mt8">
+                            <label class="col-lg-3" string="Message" for="wa_button_message"/>
+                            <field name="wa_button_message"/>
+                        </div>
+                        <div class="row mt8">
+                            <label class="col-lg-3" string="Position" for="wa_button_position"/>
+                            <field name="wa_button_position"/>
+                        </div>
+                    </div>
+                </setting>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

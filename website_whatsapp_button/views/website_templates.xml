@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <template id="whatsapp_button" inherit_id="website.layout">
+        <xpath expr="//div[@id='wrapwrap']" position="after">
+            <a t-if="website.wa_button_enabled and website.wa_button_number"
+               t-att-href="website._wa_button_url()"
+               target="_blank"
+               rel="noopener"
+               t-attf-class="o_wa_button o_wa_button_#{website.wa_button_position or 'right'}"
+               aria-label="Chat on WhatsApp">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="#ffffff" aria-hidden="true">
+                    <path d="M17.6 14.1c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-1 1.1-.2.2-.4.2-.6.1-.3-.1-1.3-.5-2.5-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.2-.6-1.5-.8-1.9-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.1 0 1.2.9 2.4 1 2.6.1.2 1.8 2.8 4.4 3.9.6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.7-.7 1.9-1.3.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3z"/>
+                    <path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.4c1.4.8 3.1 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3.1-.4-4.5-1.2l-.3-.2-3.3.9.9-3.2-.2-.3C3.8 14.7 3.4 13.4 3.4 12c0-4.7 3.9-8.6 8.6-8.6 4.7 0 8.6 3.9 8.6 8.6 0 4.7-3.9 8.6-8.6 8.6z"/>
+                </svg>
+            </a>
+        </xpath>
+    </template>
+
+</odoo>
