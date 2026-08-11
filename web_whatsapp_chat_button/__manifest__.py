@@ -33,7 +33,7 @@ message. Save.
     ],
     'assets': {
         'web.assets_frontend': [
-            'website_whatsapp_button/static/src/scss/whatsapp_button.scss',
+            'web_whatsapp_chat_button/static/src/scss/whatsapp_button.scss',
         ],
     },
     'installable': True,
