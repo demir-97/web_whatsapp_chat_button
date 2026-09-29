@@ -38,7 +38,5 @@ message. Save.
     },
     'installable': True,
     'application': False,
-    'license': 'OPL-1',
-    'price': 7.0,
-    'currency': 'USD',
+    'license': 'LGPL-3',
 }
