@@ -1,10 +1,10 @@
 {
     'name': 'WhatsApp Chat Button | Floating Contact Button for Website',
-    'version': '20.0.1.0.0',
+    'version': '20.0.1.0.1',
     'category': 'Website',
     'author': 'Meisanqo',
     'support': 'meisanqo@outlook.com',
-    'summary': 'A floating WhatsApp chat button on every website page — no code.',
+    'summary': "A floating WhatsApp button on every page of your website: visitors tap the floating chat button and a WhatsApp chat opens on your number with an optional pre-filled message. Set the WhatsApp number, the message and the position (bottom-right or bottom-left) per website from Website > Configuration > Settings: no snippet to drag, no code. Multi-website ready, each site with its own number. Click to chat opens wa.me in a new tab, with no external script, nothing tracking your visitors and nothing loaded at all while the button is off.",
     'description': """
 WhatsApp Chat Button
 ======================
